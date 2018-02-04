@@ -1,1 +1,1 @@
-export { ApplicationProxy, ContextProxy, Composing } from "./lib";
+export { Application, HttpApplication, HttpContext, Composing } from "./lib";

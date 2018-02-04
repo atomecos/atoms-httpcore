@@ -1,3 +1,3 @@
-import { ContextProxy } from "./context.proxy";
+import { HttpContext } from "./http.context";
 
-export type Composing = (ctx: ContextProxy, next: () => any) => void;
+export type Composing = (ctx: HttpContext, next: () => any) => void;

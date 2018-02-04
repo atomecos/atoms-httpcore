@@ -1,3 +1,4 @@
-export { ApplicationProxy } from "./application.proxy";
-export { ContextProxy } from "./context.proxy";
+export { Application } from "./application";
+export { HttpApplication } from "./http.application";
+export { HttpContext } from "./http.context";
 export { Composing } from "./composing";
