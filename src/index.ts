@@ -1,1 +1,1 @@
-export { Application, HttpApplication, HttpContext, Composing } from "./lib";
+export { Application, HttpApplication, HttpContext, HttpContextStore } from "./lib";
