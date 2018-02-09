@@ -1,6 +1,6 @@
 {
   "name": "atoms-httpcore",
-  "version": "0.0.1-alpha.4",
+  "version": "0.0.1-alpha.5",
   "description": "Providing HTTP Core Library for AtomServices Ecosystem",
   "main": "./dst/index.js",
   "typings": "./typings/index.d.ts",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": "git+https://github.com/atomecos/atoms-koatool",
   "dependencies": {
-    "atomservicescore": "0.1.0-alpha.11"
+    "atomservicescore": "0.1.0-alpha.19"
   },
   "devDependencies": {
     "@types/node": "^9.4.0",
