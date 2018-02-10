@@ -22,15 +22,15 @@ export interface HttpContext<RequestType = any, ResponseType = any> {
   url: string;              //  /sample/url?qs01=01&qs02=02
   path: string;             //  /sample/url
   querystring: string;      //  qs01=01&qs02=02
-  query: string;            //  { qs01: "01", qs02: 02 }
-  get(field: string): any;  //  Get 'Header Field'
+  query: string;            //  { qs01: "01", qs02: "02" }
+  get(field: string): any;  //  Get "Header Field"
 
   // Response
   body: any;
   status: any;
   message: any;
   length: string;
-  type: any;
-  append(field: string, value: string): void;       //  Append 'Header Field'
-  set(field: string | any, value?: string): void;   //  set('field', 'value') | set({ 'field': 'value' })
+  type: string;
+  append(field: string, value: string): void;       //  Append "Header Field"
+  set(field: string | any, value?: string): void;   //  set("field", "value") | set({ "field": "value" })
 }
