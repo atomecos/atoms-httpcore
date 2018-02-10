@@ -1,6 +1,6 @@
 import { Application } from "./application";
 
-export interface HttpApplication<T> extends
+export interface HttpApplication extends
   Application.IApplicationComposable,
   Application.IApplicationListenable,
   Application.IProcessContextFunctions {
