@@ -3,6 +3,7 @@ import { HttpContextStore } from "./http.context.store";
 
 export interface HttpContext<RequestType = any, ResponseType = any> {
   // Core Functions
+  toolname: string;
   process: IProcessContext;
   store: HttpContextStore;
 
@@ -24,6 +25,7 @@ export interface HttpContext<RequestType = any, ResponseType = any> {
   querystring: string;      //  qs01=01&qs02=02
   query: string;            //  { qs01: "01", qs02: "02" }
   get(field: string): any;  //  Get "Header Field"
+  data(): any;
 
   // Response
   body: any;
