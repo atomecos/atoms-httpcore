@@ -25,7 +25,7 @@ export interface HttpContext<RequestType = any, ResponseType = any> {
   querystring: string;      //  qs01=01&qs02=02
   query: string;            //  { qs01: "01", qs02: "02" }
   get(field: string): any;  //  Get "Header Field"
-  data<DataType = any>(): DataType;
+  data<DataType = any>(src?: object, ...ext: object[]): DataType;
 
   // Response
   body: any;
