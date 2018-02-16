@@ -1,7 +1,5 @@
-import { HttpContext } from "./http.context";
+import { Composing } from "./composing";
 
 export interface IComposable {
   toComposing: () => Composing;
 }
-
-export type Composing = (ctx: HttpContext, ...args: any[]) => void;
