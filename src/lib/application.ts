@@ -1,6 +1,6 @@
 import * as Http from "http";
 import { IProcessContext } from "atomservicescore";
-import { Composing } from "./icomposable";
+import { Composing } from "./composing";
 
 export namespace Application {
   export interface IApplicationComposable {
@@ -9,7 +9,7 @@ export namespace Application {
   }
 
   export interface IApplicationListenable {
-    listen: (port: number, ...exts: any[]) => Http.Server;
+    listen(port: number, ...exts: any[]): Http.Server;
   }
 
   export interface IProcessContextFunctions {
